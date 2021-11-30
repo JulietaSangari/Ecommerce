@@ -1,11 +1,16 @@
-
+import Navbar from "./components/NavBar";
 
 function App() {
+   console.log('llegue alappp');
+
   return (
+  
+
     <div className="App">
-      <h1 class="fondo">Mi proyecto de Ecommerce</h1>
+      <Navbar/>
     </div>
   );
 }
 
-export default App;
+ export default App;
+ 
