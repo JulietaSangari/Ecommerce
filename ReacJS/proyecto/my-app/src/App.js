@@ -1,13 +1,14 @@
 import Navbar from "./components/NavBar";
+import ItemListContainer from "./components/ItemListContainer"
 
 function App() {
-   console.log('llegue alappp');
-
+  
   return (
   
 
     <div className="App">
       <Navbar/>
+      <ItemListContainer/>
     </div>
   );
 }
