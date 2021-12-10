@@ -11,8 +11,9 @@ function App() {
       <Navbar/>
       <ItemListContainer/>
       <IteamCount button={0}/>
+      
     </div>
-  );
+  ); 
 }
 
  export default App;

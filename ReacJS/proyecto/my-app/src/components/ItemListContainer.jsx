@@ -11,5 +11,72 @@ const ItemListContainer = () => {
         </div>
     )
 }
+const ItemListContainer = ({greeting}) => {
+    const array = [
+        {
+            id:1,
+            name:"remera",
+            stock:5,
+            price: 1750,
+            img:"https://www.remerasya.com/pub/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/r/e/remera_corta_de_mujer.jpg",
+            category:"indumentaria",
+
+        },
+        {
+            id:2,
+            name:"vestido",
+            stock:5,
+            price: 1750,
+            img:"https://www.remerasya.com/pub/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/r/e/remera_corta_de_mujer.jpg",
+            category:"indumentaria",
+
+        },
+        {
+            id:3,
+            name:"short",
+            stock:2,
+            price: 1750,
+            img:"https://www.remerasya.com/pub/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/r/e/remera_corta_de_mujer.jpg",
+            category:"indumentaria",
+
+        },
+        {
+            id:4,
+            name:"pantalon",
+            stock:1,
+            price: 1750,
+            img:"https://www.remerasya.com/pub/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/r/e/remera_corta_de_mujer.jpg",
+            category:"indumentaria",
+
+        }
+    ]
+
+
+ const[data,setData] = useState(null);
+
+ let promise = new promise((resollve, reject) =>{
+    setTimeout(()=>{
+        resollve(array);
+    }, 3000);
+ });
+
+ const resolverArray = async () =>{
+    try{
+        const data =await promise;
+        SetData(data);
+    }catch(error){
+        throw error;
+    }finally{
+        console.log("la peticion se termino");
+    }
+  };
+
+ useEffect(() => {
+    resolverArray();
+ },[]);
+    return (
+        <div className="bg-venom full-height"></div>
+    );
+}
 
 export default ItemListContainer
