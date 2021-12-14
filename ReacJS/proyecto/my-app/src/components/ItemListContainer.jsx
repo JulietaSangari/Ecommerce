@@ -10,8 +10,7 @@ const ItemListContainer = () => {
             
         </div>
     )
-}
-const ItemListContainer = ({greeting}) => {
+
     const array = [
         {
             id:1,
