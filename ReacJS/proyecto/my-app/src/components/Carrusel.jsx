@@ -5,13 +5,13 @@ const Carrusel = ()=>{
     return (
         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">
-                <div class="carousel-item active">
+                <div className="carousel-item active">
                     <img src={img.Carrusel} className="d-block w-100" alt="...">
                     </div>
                 <div class="carousel-item">
                     <img src={img.Carrusel} className="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
+                <div className="carousel-item">
                  <img src={img.Carrusel} className="d-block w-100" alt="...">
                </div>
           </div>
