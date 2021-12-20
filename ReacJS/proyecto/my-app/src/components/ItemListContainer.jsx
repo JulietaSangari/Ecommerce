@@ -53,16 +53,16 @@ const ItemListContainer = () => {
 
  const[data,setData] = useState(null);
 
- let promise = new promise((resollve, reject) =>{
+ let promise = new promise((resolve, reject) =>{
     setTimeout(()=>{
-        resollve(array);
+        resolve(array);
     }, 3000);
  });
 
  const resolverArray = async () =>{
     try{
         const data =await promise;
-        SetData(data);
+        setData(data);
     }catch(error){
         throw error;
     }finally{
