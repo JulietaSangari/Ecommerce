@@ -1,10 +1,11 @@
 import React from "react";
-import Navbar from "./NavBar";
+import ItemListContainer from "./ItemListContainer";
+
 
 export default function Home(){
     return(
         <h1>
-            soy home
+            <ItemListContainer/>
         </h1>
     )
 }
