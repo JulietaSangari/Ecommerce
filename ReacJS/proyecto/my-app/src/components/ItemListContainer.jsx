@@ -1,4 +1,6 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react';
+import ItemCount from './ItemCount';
+import ItemList from'./ItemList';
 
 const ItemListContainer = () => {
     // return (
@@ -74,8 +76,10 @@ const ItemListContainer = () => {
     resolverArray();
  },[]);
     return (
-        <div className="bg-venom full-height"></div>
+        <div className="">
+            <ItemList items={data}/>
+        </div>
     );
 }
 
-export default ItemListContainer
+export default ItemListContainer;
