@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ItemCount from "../components/ItemCount";
+import Detalle from "./Detalle";
 
 export default function Item({item}){
     return(
@@ -13,9 +15,10 @@ export default function Item({item}){
                     </h6>
                     <p className="card-text fs-3">${item.price}</p>
                 </div>
-                <button className="btn btn-warming w-100 my-2 text-uppercase">
+                <button className="btn btn-warming w-100 my-2 text-uppercase"to={('${Detalle}')} >
                     ver detalle
                 </button>
+                
             </div>
         </div>
     );

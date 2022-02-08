@@ -1,7 +1,8 @@
 import Navbar from "./components/NavBar";
 import ItemListContainer from "./components/ItemListContainer"
 import IteamCount from "./components/ItemCount";
-import {BrowserRouter, Routes, Route, useState} from "react"
+import { useState} from "react";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./components/home";
 import Detalle from "./components/Detalle";
 import Category from "./components/Category";
@@ -10,7 +11,7 @@ import Cart from "./components/Cart";
 import Error from "./components/Error";
 import CarritoProvider from "./context/CarritoProvider";
 
-export default function app(){
+export default function App(){
   const [carrito,setCarrito]= useState([])
   return(
     <BrowserRouter>

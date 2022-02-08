@@ -55,7 +55,7 @@ const ItemListContainer = () => {
 
  const[data,setData] = useState(null);
 
- let promise = new promise((resolve, reject) =>{
+ let promise = new Promise((resolve, reject) =>{
     setTimeout(()=>{
         resolve(array);
     }, 3000);

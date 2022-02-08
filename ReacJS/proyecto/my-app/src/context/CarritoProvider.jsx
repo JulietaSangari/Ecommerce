@@ -8,12 +8,13 @@ const CarritoProvider = ({children}) => {
     const [stateTres,setStateTres] = useState(3)
 
     let usuario =true;
-    function addCrrito(item){
+
+    function addCarito(item){
        setCarrito(...carrito,item)
     }
 
     function CheckearCantidadDeItems(){
-         console.log("soy Checkear cantida")
+         console.log("Checkear cantida")
     }
 
     return (
@@ -25,4 +26,4 @@ const CarritoProvider = ({children}) => {
     );
 };
 
-export default CarritoProvider
+export default CarritoProvider;
